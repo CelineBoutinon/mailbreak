@@ -1,0 +1,73 @@
+# --- Environments ---
+.venv/
+venv/
+env/
+yahooarchive_env/
+__pycache__/
+*.pyc
+
+# --- Streamlit & Secrets ---
+.streamlit/secrets.toml
+# .streamlit/config.toml is intentionally NOT ignored (safe UI theme settings only)
+
+# --- Secrets & Credentials ---
+.env
+.env.*
+*.yaml
+*.toml
+
+# --- AWS & Local Data ---
+# Ignore the local Parquet/CSV files -- too heavy for Git
+*.parquet
+*.csv
+*.xls
+*.xlsx
+.aws/
+*.json
+*.zip
+*.png
+*.eml
+*.pdf
+*.jpeg
+*.ico
+*.svg
+*.webp
+!byehoo_logo.jpg
+
+# --- Local Email Archive Files ---
+*.eml
+*.msg
+yahoo_archive/
+emls/
+attachments/
+
+# --- Local Databases (SQL Server / SQLite) ---
+*.mdf
+*.ldf
+*.bak
+*.db
+*.sqlite
+
+# --- User-Specific Notes (Requested) ---
+# Excludes all your personal documentation and notes
+*.doc
+*.docx
+*.pdf
+# Also common for notes
+*.txt
+# Except requirements & license files
+!requirements.txt
+!LICENSE.txt
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Development Tools ---
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/

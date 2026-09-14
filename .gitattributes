@@ -1,0 +1,3 @@
+*.ipynb linguist-language=python
+*.sql linguist-language=TSQL
+*.sql linguist-detectable=true
