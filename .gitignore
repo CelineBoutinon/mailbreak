@@ -58,6 +58,7 @@ attachments/
 # Except requirements & license files
 !requirements.txt
 !LICENSE.txt
+!dot-env-example.txt
 
 # --- OS Specific ---
 .DS_Store

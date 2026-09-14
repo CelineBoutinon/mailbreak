@@ -1,0 +1,14 @@
+# Yahoo Mail Configuration
+YAHOO_EMAIL=<your-email@yahoo.com> # or whatever extension you use
+YAHOO_APP_PASSWORD=<your-app-password> # cf. README for instructions on generating an app password
+
+# AWS IAM & S3 Configuration - see README for instructions on bucket setup & programmatic access credentials 
+AWS_ACCESS_KEY_ID=<your-access-key-id>
+AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+AWS_BUCKET_NAME=<your-bucket-name>
+AWS_REGION=<your-region>
+
+# pyodbc configuration
+SERVER_NAME=<your-server-name> # e.g. localhost,1433
+DATABASE_NAME=<your-database-name> # e.g YahooArchiveDB
+CONN_STR = "mssql+pyodbc://{server_name}/{database_name}?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes&encrypt=no"
