@@ -59,7 +59,7 @@ Optional - skip these steps if using local storage only:
 Run notebooks/EDA.ipynb first in order to map folders by number of emails, attachments and size. If your goal is to archive & backup only the heaviest folders in your Yahoo account in order to regain access to your mailbox, this will help prioritize the biggest folders. This notebook generates a .csv file with all folders by decreasing size order as well as a list of folders. 
 
 5. **Run the extractor**
-Once you have decided which folders to prioritise (if any), run notebooks/extractor.ipynb to create your local email archive and optional remote archive in S3. This notebook also includes basic sanity checks to ensure backup completeness before you decide to delete anything.
+Once you have decided which folders to prioritise (if any), run notebooks/extractor.ipynb to create your local email archive and optional remote archive in S3. This notebook also includes basic sanity checks to ensure backup completeness before you decide to delete anything from your Yahoo account.
 
 6. **Generate the metadata**
 Run notebooks/metadata.ipynb to generate metadata from the emails collected from Yahoo (folder,	uid, sender, recipient, cc,	bcc, date, subject, has_attachments, attachment_names, attachment_extensions, eml_path and body_snippet).
@@ -72,7 +72,7 @@ Run in order:
 * **YahooArchiveDB_DDL.sql** to create the database and tables
 * **notebooks/db_populate.ipynb** to populate the database tables with the metadata generated at step 6
 * **YahooArchiveDB_PKDef.sql** to add primary keys, foreign keys and clustered indexes
-* **YahooArchiveDB_UploadSanityChecks.sql** to check the database creation & data insertion went ok
+* **YahooArchiveDB_UploadSanityChecks.sql** to check the database creation & data insertion
 
 8. **🎉 Run the app**
 * **Windows users:** Double-click run_yahoo_archive.bat (or create a desktop shortcut mapped to it) to launch the app.
