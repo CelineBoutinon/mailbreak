@@ -2,7 +2,6 @@
 .venv/
 venv/
 env/
-yahooarchive_env/
 __pycache__/
 *.pyc
 
@@ -17,7 +16,6 @@ __pycache__/
 *.toml
 
 # --- AWS & Local Data ---
-# Ignore the local Parquet/CSV files -- too heavy for Git
 *.parquet
 *.csv
 *.xls
@@ -49,11 +47,9 @@ attachments/
 *.sqlite
 
 # --- User-Specific Notes (Requested) ---
-# Excludes all your personal documentation and notes
 *.doc
 *.docx
 *.pdf
-# Also common for notes
 *.txt
 # Except requirements & license files
 !requirements.txt
