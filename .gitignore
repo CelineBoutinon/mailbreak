@@ -31,6 +31,8 @@ __pycache__/
 *.svg
 *.webp
 !byehoo_logo.jpg
+/Medium
+.cache_ggshield
 
 # --- Local Email Archive Files ---
 *.eml
